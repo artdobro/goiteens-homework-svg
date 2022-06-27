@@ -37,9 +37,7 @@ body {
 .container{
     width: 1200px;
   
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0; 
+    margin: 0px;
     padding-left: 15px;
     padding-right: 15px; 
 }
@@ -66,7 +64,6 @@ body {
   .header-nav{
     box-sizing: border-box;
     margin-bottom: 0;
-    border-bottom: 1px solid #ECECEC;
     text-decoration: none;
     }
     
@@ -77,9 +74,16 @@ body {
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 .a{
   display: flex;
+  align-items: center;
+}
+.contact-icon{
+  margin-right: 10px;
+  fill: currentColor;
 }
   .nav-list{
     display: flex;
@@ -155,104 +159,6 @@ body {
   } 
 .navig{
     padding-left: 0px;}
-/* .logo {
-    color: var(--seventh-color);
-    text-decoration: none;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Roboto';
-    display: flex;
-    letter-spacing: 0.03em;
-    line-height: 31px;
-    font-size: 26px;
-}
-
-.logo-span {
-    color: var(--first-color);
-    text-decoration: none;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Roboto';
-    letter-spacing: 0.03em;
-    line-height: 31px;
-    font-size: 26px;
-}
-
-.header-nav{
-    box-sizing: border-box;
-    margin-bottom: 0;
-    border-bottom: 1px solid #ECECEC;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.nav {
-    color: var(--second-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Roboto';
-    margin-right: 54px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
-.nav:last-child{
-    margin-right: 0;
-  } 
-.nav-list{
-    display: flex;
-    margin-left: 93px;
-  }
-.nav:hover {
-    color: var(--first-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-} */
-/* .cont{
-    margin-left: 250px;
-    color: var(--third-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-} */
-
-/* .contakts {
-    color: var(--third-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Roboto';
-    display: flex;
-    margin-left: auto;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
-.contakts li + li {
-    margin-left: 50px;
-  }
-  .contakts a {
-    color: var(--primary-text-color);
-  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-  .contakts a:focus,
-  .contakts a:hover {
-    color: var(--accent-color);
-  } */
 .conta{
     color: var(--third-color);
     text-decoration: none;
@@ -280,7 +186,6 @@ body {
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
-    margin-top: 23px;
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -290,6 +195,7 @@ body {
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
+     margin: 0px;
 }
 
 .big-title {
@@ -322,7 +228,8 @@ body {
 }
 
 .mini-title {
-    color: var(--second-color);
+  color: #212121;
+    /* color: var(--second-color); */
     font-weight: 700;
     font-style: normal;
     font-family: 'Roboto';
@@ -333,7 +240,8 @@ body {
     letter-spacing: 0.06em;
 }
 .min-title{
-    color: var(--second-color);
+  color: #212121;
+    /* color: var(--second-color); */
     font-weight: 700;
     font-style: normal;
     font-family: 'Roboto';
@@ -427,9 +335,9 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.16em;
     text-align: center;
-    letter-spacing: 0.03e;
+    letter-spacing: 0.03em;
     text-decoration: none;
   }
 .filter-link:hover,
@@ -462,6 +370,20 @@ color: var(--sixth-color);
 .team:not(:last-child){
     margin-right: 30px;
 }
+.sl{
+ fill: var(--third-color); 
+display: flex;
+text-align: center;
+}
+.sl:hover{
+ fill: var(--first-color);
+}
+.sl:not(:last-child){
+  margin-right: 10px;
+}
+.sl:first-child{
+  margin-left: 32px;
+}
 
 .name{
     color: var(--second-color);
@@ -487,6 +409,7 @@ color: var(--sixth-color);
     margin-left: -30px;
     margin-top: -30px;
     padding: 0px;
+    text-align: center;
   }
 
   .examples-link{
