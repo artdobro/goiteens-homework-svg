@@ -78,7 +78,9 @@ body {
     justify-content: flex-start;
     text-decoration: none;
   }
-
+.a{
+  display: flex;
+}
   .nav-list{
     display: flex;
     margin-left: 93px;
