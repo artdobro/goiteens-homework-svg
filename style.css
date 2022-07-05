@@ -6,6 +6,7 @@
     --fifth-color: #2F303A;
     --sixth-color: #F5F4FA;
     --seventh-color: #000000;
+    --svg: #AFB1B8
 }
 html{
     box-sizing: border-box;
@@ -366,6 +367,7 @@ color: var(--sixth-color);
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 .team:not(:last-child){
     margin-right: 30px;
@@ -380,23 +382,20 @@ color: var(--sixth-color);
   margin-bottom: 30px;
 }
 .sl{
- fill: var(--third-color); 
-display: flex;
-text-align: center;
-margin-top: 16px;
-margin-bottom: 42px;
+ fill: #AFB1B8; 
+
 } 
 .sl:not(:last-child){
   margin-right: 10px;
 }
-.sl:first-child{
-  margin-left: 32px;
-}
 .sa{
-  fill: var(--third-color);
+  fill: #AFB1B8;
   border-radius: 50%;
+  align-items: center;
   width: 44px;
   height: 44px;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
 .sa:hover{
@@ -421,19 +420,59 @@ margin-bottom: 42px;
   font-family: 'Roboto';
   font-size: 700;
 }
+.custom{
+  padding-left: 0px;
+}
 .custom-l{
-  border: 1px solid #AFB1B8;
-  width: 90px;
-  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--svg);
   border-radius: 4px;
-  color: #AFB1B8;
+  margin-left: 30px;
+  color: var(--svg);
+}
+.custom-l:first-child{
+  margin-right: 0px;
 }
 .custom-l:hover{
-  color: #2196F3;
-  border: 1px #2196F3;
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
 }
 .custom-ic{
 fill: currentColor;
+}
+.join-tit{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.join-it:not(:last-child){
+  margin-right: 10px;
+}
+.join-li{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--fourth-color);
+}
+.join-ic{
+  fill: currentColor;
+  margin: 12px;
+}
+.join-li:hover{
+color: var(--fourth-color);
+background-color: var(--first-color);
 }
 .name{
     color: var(--second-color);
