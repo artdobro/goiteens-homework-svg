@@ -315,6 +315,7 @@ body {
 .filter{
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin-bottom: 20px;
   }
@@ -323,13 +324,12 @@ body {
   }
   .filter-link{
     display: inline-block;
-    /* border: 1px solid black; */
     border-radius: 4px;
     min-width: 73px;
     height: 38px;
     padding: 6px 22px;
-    
-    /* font-family: 'Roboto'; */
+    justify-content: center;
+    align-items: center;
     color: var(--second-color);
     background-color: var(--sixth-color);
     font-style: normal;
@@ -370,21 +370,71 @@ color: var(--sixth-color);
 .team:not(:last-child){
     margin-right: 30px;
 }
+.icon{
+  background-color: #F5F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .sl{
  fill: var(--third-color); 
 display: flex;
 text-align: center;
-}
-.sl:hover{
- fill: var(--first-color);
-}
+margin-top: 16px;
+margin-bottom: 42px;
+} 
 .sl:not(:last-child){
   margin-right: 10px;
 }
 .sl:first-child{
   margin-left: 32px;
 }
-
+.sa{
+  fill: var(--third-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+}
+.sa:hover{
+  background-color: #2196F3;
+  fill: #ffffff;
+}
+.pr{
+  fill: var(--fourth-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  background-color: #FFFFFF1A;
+  text-align: center;
+}
+.pr:hover{
+  background-color: #2196F3;
+  fill: #ffffff;
+}
+.tit{
+  color: var(--fourth-color);
+  font-family: 'Roboto';
+  font-size: 700;
+}
+.custom-l{
+  border: 1px solid #AFB1B8;
+  width: 90px;
+  height: 170px;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+.custom-l:hover{
+  color: #2196F3;
+  border: 1px #2196F3;
+}
+.custom-ic{
+fill: currentColor;
+}
 .name{
     color: var(--second-color);
     font-weight: 700;
