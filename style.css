@@ -281,7 +281,21 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.ji{
+  margin-top: 20px;
+  margin-left: 0px;
+  padding-right: 0px;
+}
+.jf{
+  display: flex;
+}
+.fj{
+  display: flex;
+  align-items: baseline;
+}
+.join{
+  display: flex;
+}
 .logo2 {
     color: var(--fourth-color);
     text-decoration: none;
@@ -453,6 +467,7 @@ fill: currentColor;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-left: 70px;
 }
 .join-it:not(:last-child){
   margin-right: 10px;
@@ -465,6 +480,7 @@ fill: currentColor;
   height: 44px;
   border-radius: 50%;
   color: var(--fourth-color);
+  background-color: #FFFFFF1A;
 }
 .join-ic{
   fill: currentColor;
